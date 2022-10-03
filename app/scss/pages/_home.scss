@@ -1,0 +1,245 @@
+.banner {
+    display: flex;
+
+    &-cover {
+        position: relative;
+        margin-right: 48px;
+
+        .cover-background {
+            position: absolute;
+            display: block;
+            bottom: 0;
+        }
+
+        .cover-quote {
+            position: absolute;
+            display: block;
+            bottom: 240px;
+            right: 50px;
+        }
+
+        &-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 0;
+            padding: 60px 40px;
+            color: $white-color;
+            background-color: $transparent-gray;
+            height: 100%;
+            line-height: 42px;
+
+            &__title {
+                font-size: 29px;
+                font-weight: normal;
+
+                &--bold {
+                    font-size: 35px;
+                    font-weight: $bold;
+                }
+            }
+
+            &__quote {
+                font-size: 26px;
+
+                &--bold {
+                    font-size: 20px;
+                    font-weight: $bold;
+                }
+            }
+
+        }
+
+    }
+
+    &-cards {
+        display: flex;
+        justify-content: center;
+        padding: 25px 50px 50px;
+
+        .left-card {
+            position: relative;
+            margin-right: 40px;
+
+            &-bg {
+                display: flex;
+                position: relative;
+                margin-top: -153px;
+            }
+
+            &-content {
+                position: absolute;
+                bottom: 0;
+                padding: 42px;
+            }
+        }
+
+        .right-card {
+            position: relative;
+
+            &-bg {
+                display: flex;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: $bold;
+            margin-bottom: 15px;
+        }
+
+        &__description {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        &__button {
+            font-size: 14px;
+            font-weight: $bold;
+            padding: 5px 20px;
+
+            &--background {
+                background-color: $white-color;
+                color: $gray-color;
+            }
+        }
+    }
+}
+
+.about-us {
+    padding: 97px 0 87px;
+    margin: 0 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 26px;
+        color: $primary-black-color;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            height: 355px;
+            width: 225px;
+            margin: 5px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 10px $shadow-gray;
+
+            &:hover {
+                border: 1px solid $gray-color;
+                border-radius: 10px;
+            }
+
+            &__image {
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                font-size: 43px;
+                font-weight: $light;
+                color: $dark-green-color;
+                margin-bottom: 7px;
+            }
+
+            &__description {
+                font-size: 14px;
+                color: $light-gray;
+            }
+        }
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 195px 40px;
+    position: relative;
+
+    &__title {
+        font-size: 36px;
+        font-weight: $light;
+        position: absolute;
+        left: 0;
+
+        &>span {
+            font-weight: $black;
+        }
+    }
+
+    .map-container {
+        position: relative;
+
+    }
+
+    .map-locators {
+        position: absolute;
+        top: 71px;
+        left: 47px;
+    }
+}
+
+.news {
+    margin-bottom: 30px;
+    text-align: center;
+
+    &__title {
+        font-size: 26px;
+        font-weight: $light;
+        color: $primary-gray;
+        margin-bottom: 50px;
+    }
+    &-cards {
+        width: 309px;
+        box-shadow: 5px 10px 10px #0000000d;
+
+        &-info {
+            padding: 21px 32px;
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        &__description {
+            font-size: 14px;
+            font-weight: $light;
+            color: $primary-gray;
+        }
+    }
+
+    .wrapper{
+        width: 85%;
+        padding: 20px;
+        margin: 0 110px;
+        text-align:center;
+      }
+      .slick-slider {
+        padding: 0 20px 0 45px !important;
+      }
+      .slick-list {
+        padding: 20px;
+      }
+      .slick-arrow {
+        background-color: $shadow-gray !important;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .slick-prev {
+        left: -90px;
+    }
+    .slick-next {
+        right: -80px ;
+    }
+}

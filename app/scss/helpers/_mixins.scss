@@ -1,0 +1,15 @@
+@mixin display($flex,$direction,$alignment,$placing) {
+    display: $flex;
+    flex-direction: $direction; 
+    justify-content: $alignment;
+    align-items: $placing;
+}
+@mixin content-size($height,$width) {
+    height: $height;
+    width: $width;
+}
+@mixin positions($positions,$top,$left) {
+    position: $positions;
+    top: $top;
+    left: $left;
+}
